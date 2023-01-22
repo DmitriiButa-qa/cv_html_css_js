@@ -1,11 +1,28 @@
 <!doctype html>
 <html lang="en">
  <head>
- <title>Battleship</title>
- <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <link href="battleship.css" rel="stylesheet">
+  <link rel="icon" href="favicon2.ico">
+  <title>Battleship</title>
  </head>
  <body>
- <h1>Play battleship!</h1>
+  <header class="header">
+    <img src="./battleship.png" alt="avatar" class="header__avatar" />
+    <div class="header__textContainer">
+      <h1 class="header__title">Морской Бой</h1>
+      <h3 class="header__subtitle"><b>HTML<br>CSS<br>JavaScript</b></h3>
+    </div>
+  </header>
+ <section class="links">
+  <h2 class="links__header">Описание</h2>
+  <ul class="links__container">
+    <li class="links__link">
+      <p class="links__title">Суть игры: потопить корабль за меньшее количество попыток.<br>Корабль размещен на 3х клетках. В поле необходимо ввести значение от 0 до 6.</p>
+    </li>
+  </ul>
+</section>
+ <button type = "button" class="btn-toggle">Старт!</button>
  <script src="battleship.js"></script>
- </body>
+</body>
 </html>
